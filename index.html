@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find your somewhere. Pick a destination, shape your days, and let the good part begin."
+    />
+    <meta name="theme-color" content="#f8f7f3" />
+    <title>Elsewhere — Find your somewhere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Elsewhere home">
+        <span class="brand-mark" aria-hidden="true">e</span>
+        elsewhere<span class="brand-period">.</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#destinations">Destinations</a>
+        <a href="#itinerary">How it works</a>
+        <a href="#newsletter">Journal</a>
+      </nav>
+      <a class="header-cta" href="#destinations">Plan a trip <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> A little further from ordinary</p>
+          <h1 id="hero-title">Find your<br /> <em>somewhere.</em></h1>
+          <p class="hero-description">
+            The world is wonderfully wide. Tell us what you’re dreaming of and we’ll help you find your way there.
+          </p>
+          <a class="text-link" href="#destinations">Find your next escape <span aria-hidden="true">↓</span></a>
+          <div class="hero-stats" aria-label="Elsewhere travel community">
+            <div class="avatar-stack" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" alt="" />
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&q=80" alt="" />
+              <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=80&q=80" alt="" />
+              <span>+</span>
+            </div>
+            <p><strong>12k+</strong> curious people<br />have found their somewhere</p>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img
+            class="hero-image"
+            src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1500&q=88"
+            alt="Whitewashed buildings overlooking the sea in Santorini, Greece"
+          />
+          <div class="image-shade"></div>
+          <div class="photo-note"><span class="note-dot"></span> A slower kind of summer</div>
+          <div class="hero-location">
+            <span>THE CYCLADES, GREECE</span>
+            <h2>Somewhere<br />by the sea.</h2>
+            <a href="#destinations">Explore the islands <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="photo-index"><span>01</span> <i></i> 04</div>
+          <div class="floating-stamp" aria-hidden="true">
+            <span>GO A LITTLE</span><strong>further</strong><span>FEEL A LOT MORE</span>
+          </div>
+        </div>
+        <div class="hero-bottom"><span>SCROLL TO WANDER</span><span aria-hidden="true">↓</span></div>
+      </section>
+
+      <section class="destination-section section-wrap" id="destinations" aria-labelledby="destination-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> Your next chapter</p>
+            <h2 id="destination-title">Where to, <em>daydreamer?</em></h2>
+          </div>
+          <p class="section-intro">Big city energy or somewhere the Wi-Fi can’t find you. Start with a feeling.</p>
+        </div>
+
+        <div class="destination-toolbar">
+          <div class="filter-list" role="group" aria-label="Filter destinations">
+            <button class="filter-button is-active" data-filter="all" aria-pressed="true">All places</button>
+            <button class="filter-button" data-filter="coast" aria-pressed="false">By the water</button>
+            <button class="filter-button" data-filter="culture" aria-pressed="false">Culture fix</button>
+            <button class="filter-button" data-filter="nature" aria-pressed="false">Into the wild</button>
+          </div>
+          <span class="places-count"><span id="places-count">06</span> places to get lost</span>
+        </div>
+
+        <div class="destination-grid">
+          <article class="destination-card is-selected" data-place="amalfi" data-category="coast">
+            <button class="card-select" aria-label="Choose Amalfi Coast" aria-pressed="true">
+              <img src="https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?auto=format&fit=crop&w=900&q=85" alt="Colorful homes on the Amalfi Coast" loading="lazy" />
+              <span class="card-overlay"></span>
+              <span class="card-number">01 / ITALY</span>
+              <span class="card-heart" aria-hidden="true">♡</span>
+              <span class="card-caption"><span class="card-tag">SALT IN YOUR HAIR</span><strong>Amalfi Coast</strong><span class="card-meta">Italy <i>·</i> Best in May–Sept</span></span>
+              <span class="selected-mark" aria-hidden="true">✓</span>
+            </button>
+          </article>
+          <article class="destination-card" data-place="kyoto" data-category="culture">
+            <button class="card-select" aria-label="Choose Kyoto" aria-pressed="false">
+              <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=85" alt="Traditional street in Kyoto, Japan" loading="lazy" />
+              <span class="card-overlay"></span>
+              <span class="card-number">02 / JAPAN</span>
+              <span class="card-heart" aria-hidden="true">♡</span>
+              <span class="card-caption"><span class="card-tag">OLD SOUL, NEW EYES</span><strong>Kyoto</strong><span class="card-meta">Japan <i>·</i> Best in Mar–May</span></span>
+              <span class="selected-mark" aria-hidden="true">✓</span>
+            </button>
+          </article>
+          <article class="destination-card" data-place="marrakech" data-category="culture">
+            <button class="card-select" aria-label="Choose Marrakech" aria-pressed="false">
+              <img src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=900&q=85" alt="Warm ochre architecture in Marrakech, Morocco" loading="lazy" />
+              <span class="card-overlay"></span>
+              <span class="card-number">03 / MOROCCO</span>
+              <span class="card-heart" aria-hidden="true">♡</span>
+              <span class="card-caption"><span class="card-tag">A FEAST FOR THE SENSES</span><strong>Marrakech</strong><span class="card-meta">Morocco <i>·</i> Best in Oct–Apr</span></span>
+              <span class="selected-mark" aria-hidden="true">✓</span>
+            </button>
+          </article>
+          <article class="destination-card" data-place="bali" data-category="nature">
+            <button class="card-select" aria-label="Choose Bali" aria-pressed="false">
+              <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=85" alt="Lush green rice terraces in Bali, Indonesia" loading="lazy" />
+              <span class="card-overlay"></span>
+              <span class="card-number">04 / INDONESIA</span>
+              <span class="card-heart" aria-hidden="true">♡</span>
+              <span class="card-caption"><span class="card-tag">LET YOUR SHOULDERS DROP</span><strong>Bali</strong><span class="card-meta">Indonesia <i>·</i> Best in Apr–Oct</span></span>
+              <span class="selected-mark" aria-hidden="true">✓</span>
+            </button>
+          </article>
+          <article class="destination-card" data-place="lisbon" data-category="coast">
+            <button class="card-select" aria-label="Choose Lisbon" aria-pressed="false">
+              <img src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=900&q=85" alt="Lisbon's terracotta rooftops and historic buildings" loading="lazy" />
+              <span class="card-overlay"></span>
+              <span class="card-number">05 / PORTUGAL</span>
+              <span class="card-heart" aria-hidden="true">♡</span>
+              <span class="card-caption"><span class="card-tag">SUNSHINE WITH A SIDE OF SOUL</span><strong>Lisbon</strong><span class="card-meta">Portugal <i>·</i> Best in Apr–Oct</span></span>
+              <span class="selected-mark" aria-hidden="true">✓</span>
+            </button>
+          </article>
+          <article class="destination-card" data-place="dolomites" data-category="nature">
+            <button class="card-select" aria-label="Choose the Dolomites" aria-pressed="false">
+              <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=85" alt="Dramatic mountain peaks in the Dolomites" loading="lazy" />
+              <span class="card-overlay"></span>
+              <span class="card-number">06 / ITALY</span>
+              <span class="card-heart" aria-hidden="true">♡</span>
+              <span class="card-caption"><span class="card-tag">TAKE THE SCENIC ROUTE</span><strong>The Dolomites</strong><span class="card-meta">Italy <i>·</i> Best in Jun–Sept</span></span>
+              <span class="selected-mark" aria-hidden="true">✓</span>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="planner-section" id="itinerary" aria-labelledby="planner-title">
+        <div class="planner-wrap">
+          <div class="planner-heading">
+            <p class="eyebrow"><span class="eyebrow-line"></span> Make it yours</p>
+            <h2 id="planner-title">A trip that feels<br /><em>like your kind of thing.</em></h2>
+            <p>Pick your pace. We’ll take care of the little details that make a trip feel like yours.</p>
+          </div>
+
+          <div class="planner-card">
+            <div class="planner-topline"><span>YOUR LITTLE GETAWAY</span><span class="planner-step">01 <i></i> 03</span></div>
+            <div class="planner-place">
+              <span class="planner-pin" aria-hidden="true">↗</span>
+              <div><span>YOU’RE HEADED TO</span><strong id="selected-place-name">Amalfi Coast, Italy</strong></div>
+              <a href="#destinations" aria-label="Change destination">Change</a>
+            </div>
+            <div class="planner-divider"></div>
+            <div class="planner-controls">
+              <div class="control-group">
+                <label for="trip-length">HOW LONG?</label>
+                <div class="select-wrap">
+                  <select id="trip-length" aria-label="Trip length">
+                    <option value="3">A long weekend · 3 days</option>
+                    <option value="5" selected>Just right · 5 days</option>
+                    <option value="7">A full week · 7 days</option>
+                    <option value="10">Take your time · 10 days</option>
+                  </select>
+                  <span aria-hidden="true">⌄</span>
+                </div>
+              </div>
+              <div class="control-group">
+                <label>WHO’S COMING?</label>
+                <div class="guest-control">
+                  <button class="guest-button" data-guest-change="-1" aria-label="Remove one traveler">−</button>
+                  <span id="guest-count" aria-live="polite">2 travelers</span>
+                  <button class="guest-button" data-guest-change="1" aria-label="Add one traveler">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="planner-divider"></div>
+            <div class="itinerary-preview">
+              <div class="itinerary-preview-heading"><span>THE FEEL OF IT</span><button id="shuffle-itinerary" class="shuffle-button"><span aria-hidden="true">↻</span> Mix it up</button></div>
+              <div class="itinerary-days" id="itinerary-days" aria-live="polite"></div>
+            </div>
+            <button class="build-button" id="build-trip">Build my itinerary <span aria-hidden="true">↗</span></button>
+            <p class="planner-footnote"><span aria-hidden="true">✳</span> No cookie-cutter trips. Just a good place to start.</p>
+          </div>
+        </div>
+        <div class="planner-decoration" aria-hidden="true">TAKE<br />THE<br /><em>LONG</em><br />WAY</div>
+      </section>
+
+      <section class="closing-section" id="newsletter">
+        <span class="closing-spark" aria-hidden="true">✳</span>
+        <p class="eyebrow">The world’s not going anywhere. You should.</p>
+        <h2>Go where you<br /><em>feel most alive.</em></h2>
+        <a href="#destinations" class="closing-link">Find your somewhere <span aria-hidden="true">↗</span></a>
+        <span class="closing-script" aria-hidden="true">take me there</span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#"><span class="brand-mark" aria-hidden="true">e</span> elsewhere<span class="brand-period">.</span></a>
+      <span>Made for the miles that stay with you.</span>
+      <span>© ELSEWHERE 2025</span>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
